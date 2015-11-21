@@ -1,0 +1,21 @@
+{
+  "name": "video-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://german_kravets@bitbucket.org/german_kravets/videochat.git"
+  },
+  "author": "German Kravets",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/german_kravets/videochat#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "express-session": "^1.12.1"
+  }
+}
