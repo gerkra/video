@@ -3,8 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Видео Чат</title>
+    <script src="/socket.io/socket.io.js"></script>
 </head>
 <body>
-    <h1>Видео Чат!!!</h1>
+<h1>Видео Чат!!!</h1>
+
+<div id="message"></div>
+<input type="text" id="new">
+<button id="send">Послать</button>
+
+
+<script type="text/javascript">
+    var socket = io.connect();
+
+    var Button = document.getElementById('send');
+    var area = document.getElementById('message');
+    var newMessage = document.getElementById('new');
+
+    Button.addEventListener('click', function (event) {
+        var message = newMessage.value;
+
+        socket.emit('new_message', message);
+    });
+
+    socket.on('submit_message', function (data) {
+        var message = document.createElement('p');
+        message.innerHTML = data;
+
+        area.appendChild(message);
+    });
+</script>
 </body>
 </html>
