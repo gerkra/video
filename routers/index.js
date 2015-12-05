@@ -6,6 +6,10 @@ module.exports = function (app) {
         res.sendfile('index.html');
     });
 
+    app.get('/login', function (req, res, next) {
+        res.render('auth/login.jade');
+    });
+
     app.post('/login', auth.login);
     app.post('/logout', auth.logout);
 };

@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        title Видео Чат - Вход в систему
+        link(href='css/base.css',rel='stylesheet',type='text/css')
+        link(href='css/login.css',rel='stylesheet',type='text/css')
+        script(src='js/auth/login.js',type='text/javascript')
+    body
+        form(id='login-form')
+            div(class='form-input')
+                label Логин
+                input(type='text',name='login')
+            div(class='form-input')
+                label Пароль
+                input(type='text',name='password')
+            div(class='form-input')
+                button Login

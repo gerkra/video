@@ -1,0 +1,39 @@
+html,
+body {
+  background: #0c1c39;
+  height: 100%;
+  position: relative;
+}
+#login-form {
+  background: #eeeeee;
+  border-radius: 4px;
+  padding: 10px;
+  height: 180px;
+  width: 300px;
+  position: absolute;
+  top: calc(50% - 90px);
+  left: calc(50% - 150px);
+}
+#login-form button {
+  background: #37a23b;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  padding: 4px 10px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  width: 100%;
+}
+.form-input {
+  margin-bottom: 10px;
+}
+.form-input label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.form-input input {
+  padding: 5px;
+  border: 1px solid #cccccc;
+  width: 100%;
+}
